@@ -1,16 +1,15 @@
-// App.tsx
 import React from "react";
-import LeftPart from "./components/LeftPart";
-import RightPart from "./components/RightPart";
-import Header from "./components/Header";
+import { BrowserRouter as Router } from "react-router-dom";
+import Layout from "./components/Layouts";
+import Content from "./components/Content";
 
 const App: React.FC = () => {
   return (
-    <div className="flex">
-      <Header />
-      <LeftPart />
-      <RightPart />
-    </div>
+    <Router>
+      <Layout>
+        <Content />
+      </Layout>
+    </Router>
   );
 };
 
