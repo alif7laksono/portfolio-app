@@ -73,7 +73,7 @@ span {
 
 p {
   max-width: 400px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 16px;
   line-height: 1.5;
   color: #666;
@@ -375,11 +375,13 @@ p {
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .services-title {
-  cursor: pointer;
   border: 1px solid #fff;
+  cursor: pointer;
   background-color: #1a1a1a;
   padding: 7px 20px;
   color: #fff;
@@ -390,7 +392,7 @@ p {
 .services-subtitle {
   font-size: 1.5em;
   margin: 1em;
-  color: #333;
+  color: #ddd;
 }
 
 .services-list {
@@ -400,26 +402,25 @@ p {
   padding: 20px;
 }
 
+.service-lists {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ddd;
+}
+
 .service-item {
   cursor: pointer;
   width: 100%;
   max-width: 300px;
   margin: 1em;
-  border: 1px solid #ddd;
+  border: 1px solid #000;
   padding: 15px 10px;
-
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service-item:hover {
-  border: 1px solid #000;
-}
-
-.service-title {
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-  color: #fff;
-  font-weight: 900;
+  border: 1px solid #ddd;
+  transform: scale(1.05);
 }
 
 .service-description {
@@ -427,19 +428,36 @@ p {
   color: #666;
 }
 
+.read-more {
+  color: #ddd;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .services {
-    padding-top: 800px;
+    padding-top: 1000px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 601px) and (max-width: 992px) {
+  .services {
+    padding-top: 900px;
+  }
   .service-item {
     width: calc(50% - 2em);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .service-item {
     width: calc(33% - 2em);
   }

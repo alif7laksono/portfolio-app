@@ -14,13 +14,13 @@ const Sidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
   const closeSidebar = () => {
-    if (window.innerWidth <= 600) {
+    if (window.innerWidth <= 992) {
       setIsSidebarOpen(false);
     }
   };
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 600) {
+      if (window.innerWidth > 992) {
         setIsSidebarOpen(true);
       } else {
         setIsSidebarOpen(false);
@@ -37,12 +37,14 @@ const Sidebar = () => {
   return (
     <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
       <div className="header">
-        <h1 className="title">Tokyo</h1>
-        {window.innerWidth <= 600 && (
-          <button className="toggle-btn" onClick={toggleSidebar}>
-            {isSidebarOpen ? "×" : "☰"}
-          </button>
-        )}
+        <div className="header-container">
+          <h1 className="title">Tokyo</h1>
+          {(window.innerWidth <= 600 || window.innerWidth <= 992) && (
+            <button className="toggle-btn" onClick={toggleSidebar}>
+              {isSidebarOpen ? "×" : "☰"}
+            </button>
+          )}
+        </div>
       </div>
       {isSidebarOpen && (
         <nav>
