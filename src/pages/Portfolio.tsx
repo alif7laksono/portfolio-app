@@ -19,8 +19,7 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio-container">
-      <h1 className="portfolio-title">Portfolio</h1>
-
+      <h1 className="main-portfolio-title">Portfolio</h1>
       <div className="portfolio-nav">
         <h1 className="portfolio-title">Creative Portfolio</h1>
         <div className="category-buttons">

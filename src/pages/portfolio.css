@@ -5,9 +5,23 @@
   padding-top: 30px;
 }
 
-.portfolio-title {
-  font-size: 24px;
+.main-portfolio-title {
+  font-size: 30px;
+  color: #ddd;
   font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-title {
+  font-family: "Arial", sans-serif;
+  color: #ddd;
+  font-size: 34px;
+  font-weight: 900;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -36,6 +50,11 @@
   transition: background-color 0.3s ease;
 }
 
+.category-buttons button:hover {
+  background-color: #888;
+  transform: scale(1.1);
+}
+
 .category-buttons button.active {
   color: white;
 }
@@ -51,6 +70,11 @@
 .portfolio-item {
   width: calc(25% - 20px);
   margin: 10px;
+  transition: all 0.5s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
 }
 
 .portfolio-image {
@@ -59,6 +83,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .portfolio-title {
+    font-size: 24px;
+  }
   .portfolio-container {
     padding-top: 200px;
   }
@@ -72,7 +99,7 @@
     display: none;
   }
   .portfolio-container {
-    padding-top: 200px;
+    padding-top: 300px;
   }
   .portfolio-item {
     width: calc(50% - 20px);
@@ -84,12 +111,17 @@
 }
 
 @media screen and (max-width: 600px) {
+  .portfolio-container {
+    padding-top: 200px; /* Ubah sesuai kebutuhan Anda */
+  }
+
   .portfolio-title {
     display: none;
   }
-  .portfolio-container {
-    padding-top: 200px;
+  .main-portfolio-title{
+    display: none;
   }
+
   .portfolio-item {
     width: calc(100% - 20px);
   }
@@ -106,7 +138,7 @@
   }
   .category-buttons button {
     padding: 5px 2px;
-    font-size: 12pxpx;
+    font-size: 13px; /* Hapus satu 'px' */
   }
 }
 
