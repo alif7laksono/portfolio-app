@@ -7,7 +7,7 @@ export interface Service {
   price: number;
 }
 
-const servicesData: Service[] = [
+export const servicesData: Service[] = [
   {
     id: 1,
     title: "Web Design",

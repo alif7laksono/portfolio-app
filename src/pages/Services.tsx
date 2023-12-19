@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Service } from "../data/data";
 import servicesData from "../data/data";
 import ServiceDetail from "../components/ServiceDetail";
+import './services.css'
 
 export default function Services() {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
