@@ -29,13 +29,15 @@
 
 .sidebar {
   display: flex;
+  /* flex: 1; */
+  flex-direction: column;
+  /* overflow: auto; */
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 20%;
   background-color: #000;
   color: #fff;
-  flex-direction: column;
 }
 
 .sidebar nav ul {
@@ -139,7 +141,7 @@
     display: block;
     color: #fff;
     position: fixed;
-    top: 2px;
+    top: 12px;
     right: 10px;
   }
 
@@ -182,7 +184,7 @@
     display: block;
     color: #fff;
     position: fixed;
-    top: 2px;
+    top: 12px;
     right: 10px;
   }
 

@@ -16,7 +16,7 @@ export interface PortfolioItem {
       description: "Description for Project 1",
       imgUrl: "https://picsum.photos/200/300",
       client: "Client 1",
-      category: "Category 1",
+      category: "Category1",
       date: "2023-01-01",
     },
     {
@@ -25,7 +25,7 @@ export interface PortfolioItem {
       description: "Description for Project 2",
       imgUrl: "https://picsum.photos/200/301",
       client: "Client 2",
-      category: "Category 2",
+      category: "Category2",
       date: "2023-02-01",
     },
     {
@@ -34,7 +34,7 @@ export interface PortfolioItem {
       description: "Description for Project 3",
       imgUrl: "https://picsum.photos/200/302",
       client: "Client 3",
-      category: "Category 3",
+      category: "Category3",
       date: "2023-03-01",
     },
     {
@@ -43,7 +43,7 @@ export interface PortfolioItem {
       description: "Description for Project 4",
       imgUrl: "https://picsum.photos/200/303",
       client: "Client 4",
-      category: "Category 4",
+      category: "Category4",
       date: "2023-04-01",
     },
     {
@@ -52,7 +52,7 @@ export interface PortfolioItem {
       description: "Description for Project 5",
       imgUrl: "https://picsum.photos/200/304",
       client: "Client 5",
-      category: "Category 5",
+      category: "Category5",
       date: "2023-05-01",
     },
     {
@@ -61,7 +61,7 @@ export interface PortfolioItem {
       description: "Description for Project 6",
       imgUrl: "https://picsum.photos/200/305",
       client: "Client 6",
-      category: "Category 6",
+      category: "Category6",
       date: "2023-06-01",
     },
     // {
@@ -70,7 +70,7 @@ export interface PortfolioItem {
     //   description: "Description for Project 6",
     //   imgUrl: "https://picsum.photos/200/305",
     //   client: "Client 6",
-    //   category: "Category 6",
+    //   category: "Category6",
     //   date: "2023-06-01",
     // },
     // {
@@ -79,7 +79,7 @@ export interface PortfolioItem {
     //   description: "Description for Project 6",
     //   imgUrl: "https://picsum.photos/200/305",
     //   client: "Client 6",
-    //   category: "Category 6",
+    //   category: "Category6",
     //   date: "2023-06-01",
     // },
     // {
